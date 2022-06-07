@@ -1,13 +1,15 @@
 import React from 'react';
+import {BrowserRouter as Router , Routes , Route} from "react-router-dom";
 
 export const AppRoutes = () => {
     return (
-        <div>
-        <a href="/">Index Page</a>
-        <a href="/home">Index Page</a>
-        <a href="/Not-Found">Not Found Page</a>
-        
-        </div>
+        <Router>
+            <Routes>
+                <Route path="/" element={<Index />} />
+                <Route path="/home" element={<Home />} />
+                <Route path="*" element={<NotFound />} />
+            </Routes>
+        </Router />
 
     )
 }

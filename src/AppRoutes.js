@@ -5,7 +5,7 @@ export const AppRoutes = () => {
         <div>
         <a href="/">Index Page</a>
         <a href="/home">Index Page</a>
-        <a href="/">Index Page</a>
+        <a href="/Not-Found">Not Found Page</a>
         
         </div>
 
